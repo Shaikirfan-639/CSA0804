@@ -1,0 +1,117 @@
+#find the kth smallest element in the list
+numbers = [7, 10, 4, 3, 20, 15]
+k = 3
+
+numbers.sort()
+print(numbers[k - 1])
+
+#FIND THE DIFFERENCES B/W TWO LISTS
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7]
+
+
+diff1 = list(set(list1) - set(list2))
+diff2 = list(set(list2) - set(list1))
+
+print("In list1 but not in list2:", diff1)
+print("In list2 but not in list1:", diff2)
+
+#FIND THE INTERSECTION OF THE TWO LISTS
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7]
+
+intersection = list(set(list1) & set(list2))
+
+print("Common elements:", intersection)
+
+#FIND THE UNION IF TWO LISTS
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+union = list(set(list1) | set(list2))
+
+print("Union:", union)
+
+#FIND THE COMMON ELEMENTS  B/W TWO LISTS
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+
+common = list(set(list1) & set(list2))
+
+print("Common elements:", common)
+#reversing a list
+a=[1,2,3,4,5]
+a.reverse()
+a
+[5, 4, 3, 2, 1]
+
+
+#list slicing
+a=[1,2,3,4,5]
+rev=a[::-1]
+
+print(rev)
+
+#remove duplicate in a list
+a =[1,1,2,2,3,3,4,4,5]
+
+a = list(set(a))
+
+print(a)
+
+#the smallest in the given list of numbers
+a = [8, 3, 5, 1, 9, 12]
+smallest = min(a)
+print(smallest)
+
+
+#second largest number in a list
+a = [10, 20, 4, 45, 99]
+max1 = max2 = float('-inf')
+for n in a:
+    if n > max1:      
+        max2 = max1          
+        max1 = n     
+    elif n > max2 and n != max1:
+        max2 = n  
+
+print(max2)
+
+#sum of all elements in a list
+a = [10, 20, 30, 40]
+res = sum(a)
+print(res)
+
+#Shuffle a given list
+import random
+
+a = [1, 2, 3, 4, 5]
+random.shuffle(a)
+print(a)
+
+#concatenate two lists
+listone = [1, 2, 3]
+listtwo = [4, 5, 6]
+
+joinedlist = listone + listtwo
+print(joinedlist)
+
+#Sort a given list in a ascending order
+a = [5, 2, 9, 1, 5, 6]
+a.sort()
+print(a)
+
+#Find the frequency of all elements in a given list
+from collections import Counter  
+
+a = [1, 2, 2, 3, 4, 2, 5, 3, 1]  
+b = [1, 2, 3]  
+
+freq = Counter(a)  
+res = {x: freq[x] for x in b}  
+
+print(res)
+
+#Find the index of agiven element in a list
+a = ["cat", "dog", "tiger"]
+print(a.index("dog"))
+
