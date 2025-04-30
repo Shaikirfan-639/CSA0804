@@ -1,0 +1,10 @@
+#Find the frequency of all elements in a given list
+from collections import Counter  
+
+a = [1, 2, 2, 3, 4, 2, 5, 3, 1]  
+b = [1, 2, 3]  
+
+freq = Counter(a)  
+res = {x: freq[x] for x in b}  
+
+print(res)
