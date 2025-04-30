@@ -1,0 +1,18 @@
+def fibonacci_series(n):
+    fib_list = []
+    def fibonacci_recursive(i):
+        if i == 0:
+            return 0
+        elif i == 1:
+            return 1
+        else:
+            return fibonacci_recursive(i - 1) + fibonacci_recursive(i - 2)
+
+    for i in range(n):
+        fib_list.append(fibonacci_recursive(i))
+    return fib_list
+
+
+n = int(input("Enter the number of Fibonacci numbers to generate: "))
+fib_numbers = fibonacci_series(n)
+print("Fibonacci Series:", fib_numbers)
