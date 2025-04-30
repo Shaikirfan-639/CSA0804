@@ -1,0 +1,3 @@
+#Find the index of a given element in a list
+a = ["cat", "dog", "tiger"]
+print(a.index("dog"))
