@@ -1,0 +1,13 @@
+
+
+FIND THE DIFFERENCES B/W TWO LISTS
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7]
+
+
+diff1 = list(set(list1) - set(list2))
+diff2 = list(set(list2) - set(list1))
+
+print("In list1 but not in list2:", diff1)
+print("In list2 but not in list1:", diff2)
+
