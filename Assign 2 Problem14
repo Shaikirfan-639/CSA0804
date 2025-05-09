@@ -1,0 +1,9 @@
+##given string is palindrome or not
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")  # Optional: ignore case and spaces
+    return s == s[::-1]
+text = "Madam"
+if is_palindrome(text):
+    print(f"'{text}' is a palindrome.")
+else:
+    print(f"'{text}' is not a palindrome.")
