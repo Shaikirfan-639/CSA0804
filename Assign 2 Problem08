@@ -1,0 +1,23 @@
+##find the largest prime number less than a given  number
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def largest_prime_less_than(n):
+    for num in range(n - 1, 1, -1):
+        if is_prime(num):
+            return num
+    return None  # No prime found
+
+# Example usage
+number = 50
+result = largest_prime_less_than(number)
+if result:
+    print("Largest prime less than", number, "is:", result)
+else:
+    print("No prime number found below", number)
