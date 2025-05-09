@@ -1,0 +1,11 @@
+##If a number is Positive ,negative or zero
+def check_number(n):
+    if n > 0:
+        return "Positive"
+    elif n < 0:
+        return "Negative"
+    else:
+        return "Zero"
+num = -5
+result = check_number(num)
+print(f"The number {num} is", result)
