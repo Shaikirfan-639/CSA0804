@@ -1,0 +1,9 @@
+##given number is divisible by 3 or 5
+def is_divisible_by_3_or_5(n):
+    return n % 3 == 0 or n % 5 == 0
+
+num = 15
+if is_divisible_by_3_or_5(num):
+    print(num, "is divisible by 3 or 5.")
+else:
+    print(num, "is not divisible by 3 or 5.")
