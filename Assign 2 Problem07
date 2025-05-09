@@ -1,0 +1,14 @@
+##If a given number is square or not
+import math
+
+def is_perfect_square(n):
+    if n < 0:
+        return False
+    root = math.isqrt(n)
+    return root * root == n
+
+num = 49
+if is_perfect_square(num):
+    print(num, "is a perfect square.")
+else:
+    print(num, "is not a perfect square.")
