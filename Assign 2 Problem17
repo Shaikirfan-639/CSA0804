@@ -1,0 +1,9 @@
+##If a number is even or odd
+def even_or_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+num = 15
+result = even_or_odd(num)
+print(num, "is", result)
