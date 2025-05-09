@@ -1,0 +1,7 @@
+##find the average of  a list of numbers
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+num_list = [10, 20, 30, 40, 50]
+avg = average(num_list)
+print("Average is:", avg)
