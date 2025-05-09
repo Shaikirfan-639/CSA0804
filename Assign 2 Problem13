@@ -1,0 +1,9 @@
+##If given character is vowel or consonant
+def is_vowel_or_consonant(char):
+    if not char.isalpha() or len(char) != 1:
+        return "Invalid input"
+    vowels = "aeiouAEIOU"
+    return "Vowel" if char in vowels else "Consonant"
+ch = 'e'
+result = is_vowel_or_consonant(ch)
+print(ch, "is a", result)
