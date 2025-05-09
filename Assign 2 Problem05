@@ -1,0 +1,11 @@
+#find the greatest common divisor of three numbers
+import math
+def gcd_of_three(a, b, c):
+    return math.gcd(math.gcd(a, b), c)
+
+num1 = 36
+num2 = 60
+num3 = 48
+
+result = gcd_of_three(num1, num2, num3)
+print("GCD of", num1, num2, "and", num3, "is:", result)
