@@ -1,0 +1,14 @@
+##palindrome or not using recursion
+def is_palindrome(s,i,j):
+    if i >= j:  # base case
+        return True
+    if s[i] != s[j]:  # mismatch found
+        return False
+    return is_palindrome(s, i + 1, j - 1)
+
+s = "geeks"  # string
+
+if is_palindrome(s, 0, len(s) - 1):  # call function with initial pointers
+    print("Yes") 
+else:
+    print("No")
