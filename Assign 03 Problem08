@@ -1,0 +1,24 @@
+##Find the second most frequent string in agiven string
+
+from collections import Counter
+
+def second_most_frequent(text):
+
+    words = text.split()
+    
+   
+    freq = Counter(words)
+
+    if len(freq) < 2:
+        return "Not enough unique words to determine second most frequent."
+
+
+    most_common = freq.most_common()
+
+ 
+    return most_common[1][0]
+
+
+text = "apple banana apple orange banana apple banana"
+result = second_most_frequent(text)
+print("Second most frequent word:", result)
