@@ -1,0 +1,10 @@
+##Find the frequency of all character in a given string
+
+from collections import Counter
+
+text = "hello world"
+
+char_freq = Counter(text)
+
+for char, freq in char_freq.items():
+    print(f"'{char}': {freq}")
