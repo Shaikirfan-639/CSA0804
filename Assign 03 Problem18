@@ -1,0 +1,8 @@
+##capitalize each word in a string
+
+def capitalize_words(s):
+    return s.title()
+
+sentence = "hello world! this is python."
+result = capitalize_words(sentence)
+print(result)
