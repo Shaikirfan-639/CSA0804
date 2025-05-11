@@ -1,0 +1,15 @@
+##remove a string using slicing
+
+def remove_substring(s, sub):
+    start_index = s.find(sub)
+    
+    if start_index != -1:
+        end_index = start_index + len(sub)
+        return s[:start_index] + s[end_index:]
+    else:
+        return s
+
+text = "Hello, World!"
+substring = "World"
+result = remove_substring(text, substring)
+print(result)
