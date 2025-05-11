@@ -1,0 +1,11 @@
+##Find the index of substring in a given string
+
+text = "Hello, welcome to Python programming."
+substring = "Python"
+
+index = text.find(substring)
+
+if index != -1:
+    print(f"Substring found at index {index}")
+else:
+    print("Substring not found")
