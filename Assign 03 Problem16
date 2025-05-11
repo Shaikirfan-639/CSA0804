@@ -1,0 +1,12 @@
+##find the length of longest word in a given string
+
+def longest_word_length(s):
+    words = s.split()
+    
+    longest = max(words, key=len)
+    
+    return len(longest)
+
+sentence = "This is a test sentence with some long words"
+result = longest_word_length(sentence)
+print("Length of the longest word:", result)
