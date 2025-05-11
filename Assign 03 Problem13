@@ -1,0 +1,10 @@
+##Check is a given string contains digit
+
+def contains_digit(s):
+    return any(char.isdigit() for char in s)
+
+text = "Hello123"
+if contains_digit(text):
+    print("The string contains a digit.")
+else:
+    print("The string does not contain a digit.")
