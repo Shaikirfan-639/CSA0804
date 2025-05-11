@@ -1,0 +1,9 @@
+##concatenate two strings without '+' operator
+
+def concatenate_strings(str1, str2):
+    return ''.join([str1, str2])
+
+str1 = "Hello"
+str2 = "World"
+result = concatenate_strings(str1, str2)
+print(result)
