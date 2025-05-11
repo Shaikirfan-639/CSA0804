@@ -1,0 +1,6 @@
+##Number of words in given string
+text = "This is a sample string with several words."
+words = text.split()
+word_count = len(words)
+
+print("Number of words:", word_count)
