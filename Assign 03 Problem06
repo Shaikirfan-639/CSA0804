@@ -1,0 +1,5 @@
+##Remove all whitespaces from the string
+
+text = "  Hello   World  "
+no_spaces = text.replace(" ", "")
+print(no_spaces)  # Output: HelloWorld
