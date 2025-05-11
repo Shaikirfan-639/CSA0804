@@ -1,0 +1,13 @@
+##find the first repeating character in a given string
+
+def first_repeating_char(s):
+    seen = set()
+    for char in s:
+        if char in seen:
+            return char
+        seen.add(char)
+    return "No repeating character found."
+
+text = "programming"
+result = first_repeating_char(text)
+print("First repeating character:", result)
