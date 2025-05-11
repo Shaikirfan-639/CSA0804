@@ -1,0 +1,8 @@
+##Find the common character between two given strings
+
+str1 = "python"
+str2 = "notepad"
+
+common_chars = set(str1) & set(str2)
+
+print("Common characters:", common_chars)
