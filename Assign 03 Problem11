@@ -1,0 +1,11 @@
+##Replace all occurrences of a given word in a string with another
+
+def replace_word(text, old_word, new_word):
+    return text.replace(old_word, new_word)
+
+text = "I love Python. Python is great!"
+old_word = "Python"
+new_word = "Java"
+
+new_text = replace_word(text, old_word, new_word)
+print("Updated text:", new_text)
