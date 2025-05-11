@@ -1,0 +1,9 @@
+##count the occurences in a given string
+
+def count_occurrences(text, substring):
+    return text.count(substring)
+
+text = "hello world, hello everyone"
+substring = "hello"
+result = count_occurrences(text, substring)
+print(f"The substring '{substring}' appears {result} times.")
