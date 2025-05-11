@@ -1,0 +1,16 @@
+##find the most frequent word in a given sentence
+
+from collections import Counter
+
+def most_frequent_word(sentence):
+    words = sentence.split()
+
+    word_count = Counter(words)
+
+    most_common_word, freq = word_count.most_common(1)[0]
+    
+    return most_common_word, freq
+
+sentence = "This is a test sentence. This is just a test."
+word, frequency = most_frequent_word(sentence)
+print(f"The most frequent word is '{word}' with {frequency} occurrences.")
