@@ -1,0 +1,7 @@
+##concatenate two dictionaries
+dict1 = {'a': 10, 'b': 20}
+dict2 = {'c': 30, 'd': 40}
+
+concatenated_dict = {**dict1, **dict2}
+
+print("Concatenated dictionary:", concatenated_dict)
