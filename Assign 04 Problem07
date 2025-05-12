@@ -1,0 +1,6 @@
+##convert a list of tuples to a list of lists
+tuple_list = [(1, 2), (3, 4), (5, 6)]
+
+list_of_lists = [list(t) for t in tuple_list]
+
+print("List of lists:", list_of_lists)
