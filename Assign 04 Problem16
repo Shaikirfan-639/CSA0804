@@ -1,0 +1,6 @@
+##find the sum of all elements in a given tuple
+my_tuple = (10, 20, 30, 40, 50)
+
+tuple_sum = sum(my_tuple)
+
+print("Sum of all elements in the tuple:", tuple_sum)
