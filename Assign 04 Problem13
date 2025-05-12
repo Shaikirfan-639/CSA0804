@@ -1,0 +1,17 @@
+##remove a given key from a given dictionary
+my_dict = {
+    'a': 10,
+    'b': 20,
+    'c': 30,
+    'd': 40
+}
+
+key_to_remove = 'b'
+
+if key_to_remove in my_dict:
+    del my_dict[key_to_remove]
+    print(f"Key '{key_to_remove}' removed from the dictionary.")
+else:
+    print(f"Key '{key_to_remove}' not found in the dictionary.")
+
+print("Updated dictionary:", my_dict)
