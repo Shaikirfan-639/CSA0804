@@ -1,0 +1,7 @@
+##sort a given tuple in ascending order
+
+my_tuple = (5, 2, 9, 1, 7)
+
+sorted_tuple = tuple(sorted(my_tuple))
+
+print("Sorted tuple in ascending order:", sorted_tuple)
