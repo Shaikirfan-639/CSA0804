@@ -1,0 +1,11 @@
+##Write  a python program to convert a dictionary to a list of tuples in simple python program
+
+my_dict = {
+    'name': 'Alice',
+    'age': 25,
+    'city': 'New York'
+}
+
+tuple_list = list(my_dict.items())
+
+print("List of tuples:", tuple_list)
