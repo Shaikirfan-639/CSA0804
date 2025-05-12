@@ -1,0 +1,9 @@
+##check if a given elements exists in a given tuple
+my_tuple = (10, 20, 30, 40, 50)
+
+element_to_check = 30
+
+if element_to_check in my_tuple:
+    print(f"Element {element_to_check} exists in the tuple.")
+else:
+    print(f"Element {element_to_check} does not exist in the tuple.")
