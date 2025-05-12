@@ -1,0 +1,10 @@
+##find the index of a given elements in a given tuple
+my_tuple = (10, 20, 30, 40, 50)
+
+element_to_find = 30
+
+if element_to_find in my_tuple:
+    index = my_tuple.index(element_to_find)
+    print(f"The index of element {element_to_find} is: {index}")
+else:
+    print(f"Element {element_to_find} not found in the tuple.")
