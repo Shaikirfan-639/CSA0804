@@ -1,0 +1,11 @@
+##find the length of a given dictionary
+my_dict = {
+    'a': 10,
+    'b': 20,
+    'c': 30,
+    'd': 40
+}
+
+dict_length = len(my_dict)
+
+print("Length of the dictionary:", dict_length)
