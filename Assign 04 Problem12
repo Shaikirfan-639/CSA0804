@@ -1,0 +1,12 @@
+##sort a given dictionary by its values
+my_dict = {
+    'a': 10,
+    'b': 25,
+    'c': 5,
+    'd': 40,
+    'e': 15
+}
+
+sorted_dict = dict(sorted(my_dict.items(), key=lambda item: item[1]))
+
+print("Dictionary sorted by values:", sorted_dict)
